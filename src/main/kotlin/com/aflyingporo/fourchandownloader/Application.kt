@@ -1,6 +1,6 @@
 package com.aflyingporo.fourchandownloader
 
-import ImageLink
+import com.aflyingporo.fourchandownloader.model.ImageLink
 import com.aflyingporo.fourchandownloader.FileUtil.cleanFileName
 import com.aflyingporo.fourchandownloader.FileUtil.div
 import io.ktor.client.*
@@ -21,7 +21,6 @@ import java.io.File
 import java.text.DateFormat
 import java.text.ParseException
 import java.text.SimpleDateFormat
-import java.time.Instant
 import java.util.*
 import kotlin.time.Duration.Companion.seconds
 
