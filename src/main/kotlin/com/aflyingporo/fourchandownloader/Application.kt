@@ -104,7 +104,7 @@ fun main(args: Array<String>): Unit = runBlocking {
         }
     } else {
         defaultDownloadFolder
-    } / threadBoard / if (argUseThreadNames == true) threadSubject.cleanFileName() else threadId
+    } / threadBoard / if (argUseThreadNames == true) threadSubject.cleanFileName().trim() else threadId
     downloadFolder.mkdirs()
     logger.info("Download folder: ${downloadFolder.absolutePath}")
 
